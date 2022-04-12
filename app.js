@@ -25,8 +25,8 @@ app.use((req, res, next) => {
 
 //routes
 const apiRouter = require("./routes/apiRoutes");
-const webRoutes = require("./routes/webRoutes");
-app.use("", webRoutes);
+const webRouter = require("./routes/webRoutes");
+app.use("", webRouter);
 app.use("/api/v1", apiRouter);
 
 app.listen(port, () => {
